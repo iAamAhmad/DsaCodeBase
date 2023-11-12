@@ -46,4 +46,5 @@ print("%d", *p) // de referencing
 int a;   //data variable
 int &a; //reference
 int *a; // pointer
+int *a; // pointer
 */
