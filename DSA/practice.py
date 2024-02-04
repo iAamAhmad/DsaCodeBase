@@ -27,4 +27,45 @@ def findingFebn(var1, var2):
       return
 findingFebn(0,1)
 findingFebn(0,1)
-   
+
+
+def F(n):
+   if n <= 1:
+      return n
+   else:
+      return F(n-1) + F(n-2)
+print(F(19))
+
+
+my_array = [0,1,3,5,7,8]
+min_val = my_array[0]
+for i in my_array:
+   if i < min_val:
+      min_val = i
+print(min_val)
+
+x =[3,5,6,7,8,9]
+min = x[0]
+for i in x:
+   if i< min:
+      min = i
+print(min)
+
+
+
+y =[3,5,6,7,8,9]
+max = x[0]
+for i in x:
+   if i> max:
+      max = i
+print(max)
+
+#bubule sort
+
+b = [8,4,6,7,2,3]
+n = len(b)
+for i in range(n-1):
+   for j in range(n-i-1):
+      if b[j] > b[j+1]:
+         b[j+1], b[j] = b[j], b[j+1]
+print(b)
