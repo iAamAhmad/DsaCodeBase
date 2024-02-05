@@ -69,3 +69,19 @@ for i in range(n-1):
       if b[j] > b[j+1]:
          b[j+1], b[j] = b[j], b[j+1]
 print(b)
+
+#selection sorting
+
+selection_sort = [3,4,5,6,2,8]
+n = len(selection_sort)
+for i in range(n-1):
+   min_index = i
+   for j in range(i+1,n):
+      if selection_sort[j] < selection_sort[min_index]:
+         min_index = j
+   min_val = selection_sort.pop( min_index)
+   selection_sort.insert(i,min_val)
+print(selection_sort)
+      
+      
+
